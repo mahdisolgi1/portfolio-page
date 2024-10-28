@@ -1,0 +1,136 @@
+.headerDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 78%;
+
+  margin-bottom: 2rem;
+}
+
+.headerDetailsText {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.headerDetailsImgBox {
+  width: 40%;
+}
+
+.headerImg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.primaryHeading {
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.primaryP {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.headers {
+  padding: 0 0 3rem;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  padding: 0 0 4rem;
+}
+
+.skillsList li {
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.previewSkills {
+  background-color: #000;
+  color: #fde17f;
+  margin-bottom: 6rem;
+  padding: 2.5rem;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.heroSection {
+  margin-bottom: 3.5rem;
+  margin-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fde17f;
+}
+
+.skills-list li {
+  display: inline-block;
+}
+
+@media (max-width: 80rem) {
+  html {
+    font-size: 70%;
+  }
+  .primaryHeading {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+  }
+  .primaryP {
+    font-size: 4rem;
+  }
+  .skill {
+    font-size: 3rem;
+  }
+  .headerDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+  .heroSection {
+    margin-top: 11rem;
+  }
+}
+
+@media (max-width: 67rem) {
+  html {
+    font-size: 80%;
+  }
+  .primaryHeading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  .primaryP {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .skill {
+    font-size: 2rem;
+  }
+  .heroSection {
+    margin-top: 9rem;
+  }
+}
