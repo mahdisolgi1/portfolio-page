@@ -1,31 +1,32 @@
 import { projectRecommendations } from "../data/data";
+import styles from "./Testimonials.module.css";
 
 function Testimonials() {
   return (
     <>
-      <div className="testimonial-Nav-text">
-        <h2 id="testimonoals" className="secondary-heading text-center">
+      <div className={styles.testimonialNavtext}>
+        <h2 id="testimonoals" className={"secondary-heading  text-center"}>
           Testiomonials
         </h2>
-        <p className=" subheading add-margin text-center">
+        <p className={"subheading add-margin text-center"}>
           See the testiomonials for me
         </p>
       </div>
-      <div className="tesimonial-box">
+      <div className={styles.tesimonialBox}>
         {projectRecommendations.map((index) => (
-          <div className="tesimonial" key={index.id}>
-            <div className="img-box-empty-profile">
+          <div className={styles.tesimonial} key={index.id}>
+            <div className={styles.imgBoxEmptyProfile}>
               <img
-                className="img-empty-profile"
+                className={styles.imgEmptyProfil}
                 src={index.image}
                 alt="empty-profile"
               />
             </div>
-            <p className="recommandedBy">
+            <p className={styles.recommandedBy}>
               {index.name}
               <br /> ({index.role})
             </p>
-            <blockquote className="blockquote">{index.text}</blockquote>
+            <blockquote className={styles.blockquote}>{index.text}</blockquote>
           </div>
         ))}
       </div>
