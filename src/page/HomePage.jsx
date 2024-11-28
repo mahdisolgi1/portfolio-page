@@ -4,7 +4,7 @@ import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
 import Testimonials from "../components/Testimonials";
 
-function App() {
+function HomePage() {
   return (
     <>
       <Header />
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
