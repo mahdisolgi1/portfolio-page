@@ -1,40 +1,13 @@
-import { useState } from "react";
-
 import { projectRecommendations, skills, services } from "../data/data";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function App() {
-  const [viewAll, setViewAll] = useState(false);
-
   return (
     <>
       <Header />
 
       <main>
-        <div className="skills-intro">
-          <h2 id="skills" className="secondary-heading text-center">
-            Skills
-          </h2>
-          <p className="subheading text-center">
-            The skills that I can provide
-          </p>
-        </div>
-        <div className="skills-container">
-          <div className="skills">
-            {skills.slice(0, viewAll ? skills.length : 5).map((skill) => (
-              <div className="skill" key={skill.id}>
-                <p>{skill.name}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <button onClick={() => setViewAll(!viewAll)} className="btn-all">
-              {viewAll ? "Show Less" : "View All"}
-            </button>
-          </div>
-        </div>
-
         <h2 id="portfolio" className="secondary-heading text-center">
           portfolios
         </h2>
