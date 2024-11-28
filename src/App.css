@@ -99,28 +99,6 @@ body {
   margin-bottom: 3rem;
 }
 
-.tesimonial-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 3rem;
-  padding: 2rem;
-  row-gap: 8rem;
-  margin-top: 4rem;
-  column-gap: 4rem;
-  align-items: center;
-  gap: 4rem;
-  justify-items: center;
-}
-
-.tesimonial {
-  height: 100%;
-  border-radius: 12px;
-  padding: 5rem 2rem 2rem;
-  border: #000 solid 2px;
-  position: relative;
-  margin: 1rem 2rem;
-}
-
 .img-box-empty-profile {
   width: calc(20% - 2rem);
   top: 0;
@@ -135,11 +113,6 @@ body {
   border-radius: 50%;
 }
 
-.testimonial-header-text {
-  margin-bottom: 6rem;
-  margin-top: 3rem;
-}
-
 .portfolio-text,
 .blockquote {
   position: relative;
@@ -151,22 +124,6 @@ body {
 
 .add-margin {
   margin-bottom: 6rem;
-}
-
-blockquote::before {
-  content: '"';
-  font-size: 2rem;
-  position: absolute;
-  left: -1.5rem;
-  top: 0;
-}
-
-blockquote::after {
-  content: '"';
-  font-size: 2rem;
-  position: absolute;
-  right: -1.5rem;
-  bottom: 0;
 }
 
 .recommandedBy {
@@ -188,16 +145,6 @@ blockquote::after {
 @media (max-width: 80rem) {
   html {
     font-size: 70%;
-  }
-
-  .tesimonial-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    align-items: center;
-    gap: 6rem;
-    justify-items: center;
   }
 
   .porfolio-container {
@@ -222,20 +169,6 @@ blockquote::after {
     font-size: 80%;
   }
 
-  .tesimonial-box {
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10rem;
-    justify-items: center;
-  }
-
-  .tesimonial {
-    max-width: 80%;
-  }
-
   .img-box-empty-profile {
     width: calc(25% - 6vw);
     transform: translatex(100%, 0);
@@ -257,10 +190,6 @@ blockquote::after {
   }
 
   .portfolio-text {
-    font-size: 3rem;
-  }
-
-  .blockquote {
     font-size: 3rem;
   }
 
