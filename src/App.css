@@ -14,10 +14,6 @@ body {
   background-color: #fde17f;
 }
 
-.skills-intro {
-  text-align: center;
-}
-
 .talk-btn {
   font-size: 2.4rem;
   font-weight: 600;
@@ -41,40 +37,11 @@ body {
   text-align: center;
 }
 
-.skills-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.skills {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  align-items: center;
-  align-content: space-between;
-  justify-content: space-around;
-}
-
-.skill {
-  background-color: #c0eba6;
-  border-radius: 12px;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-}
-
 .secondary-heading {
   margin-bottom: 3rem;
   font-size: 3rem;
   font-weight: 700;
   scroll-margin-top: 10rem;
-}
-
-.skills-datail {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
 }
 
 .btn-all {
@@ -223,15 +190,6 @@ blockquote::after {
     font-size: 70%;
   }
 
-  .skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    align-content: space-between;
-    justify-content: space-around;
-  }
-
   .tesimonial-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -262,15 +220,6 @@ blockquote::after {
 @media (max-width: 67rem) {
   html {
     font-size: 80%;
-  }
-
-  .skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    align-content: space-between;
-    justify-content: space-around;
   }
 
   .tesimonial-box {
@@ -313,10 +262,6 @@ blockquote::after {
 
   .blockquote {
     font-size: 3rem;
-  }
-
-  .skill {
-    font-size: 2rem;
   }
 
   .btn-all {
