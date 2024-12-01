@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import "./HomePage.css";
 import Header from "../components/Header";
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
