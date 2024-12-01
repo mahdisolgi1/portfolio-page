@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { skills } from "../data/data";
+import styles from "./Skills.module.css";
 
 function Skills() {
   const [viewAll, setViewAll] = useState(false);
   return (
     <>
-      <div className="skills-intro">
+      <div className={styles.skillsIntro}>
         <h2 id="skills" className="secondary-heading text-center">
           Skills
         </h2>
         <p className="subheading text-center">The skills that I can provide</p>
       </div>
-      <div className="skills-container">
-        <div className="skills">
+      <div className={styles.skillsContainer}>
+        <div className={styles.skills}>
           {skills.slice(0, viewAll ? skills.length : 5).map((skill) => (
-            <div className="skill" key={skill.id}>
+            <div className={styles.skill} key={skill.id}>
               <p>{skill.name}</p>
             </div>
           ))}
