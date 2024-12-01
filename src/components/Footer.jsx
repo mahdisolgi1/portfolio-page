@@ -8,8 +8,8 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.logo} onClick={scrollToTop}>
         M.S.Dev
-      </div>{" "}
-      {/* Logo */}
+      </div>
+
       <div className={styles.linksContainer}>
         <ul className={`${styles.footer} ${styles.links}`}>
           <li>
@@ -18,7 +18,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <a href="https://linkedin.com/in/mahdi-solgi" target="_blank">
               <i className="fab fa-linkedin"></i> LinkedIn
             </a>
           </li>
@@ -28,7 +28,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="mailto:vass1383@gmail.com">
+            <a href="mailto:mahdi.solgi.dev@gmail.com">
               <i className="fas fa-envelope"></i> Gmail
             </a>
           </li>
