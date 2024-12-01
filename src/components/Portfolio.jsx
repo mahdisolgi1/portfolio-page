@@ -1,4 +1,5 @@
 import { services } from "../data/data";
+import styles from "./Portfolio.module.css";
 
 function Portfolio() {
   return (
@@ -9,13 +10,12 @@ function Portfolio() {
       <p className="subheading text-center">
         See the services that i can provide
       </p>
-      <div className="porfolio-container">
+      <div className={styles.porfolioContainer}>
         {services.map((skill) => (
-          <div key={skill.id} className="porfolio">
-            {/* icon */}
-            <h3 className="portfolio-heading">{skill.name}</h3>
-            <p className="portfolio-proficiency">({skill.proficiency})</p>
-            <p className="portfolio-text">{skill.description}</p>
+          <div key={skill.id} className={styles.porfolio}>
+            <h3 className={styles.portfolioHeading}>{skill.name}</h3>
+            <p className={styles.portfolioProficiency}>({skill.proficiency})</p>
+            <p className={styles.portfolioText}>{skill.description}</p>
           </div>
         ))}
       </div>
