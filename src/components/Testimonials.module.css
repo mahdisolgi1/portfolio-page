@@ -24,7 +24,18 @@
   margin-bottom: 6rem;
   margin-top: 3rem;
 }
+.imgBoxEmptyProfile {
+  width: calc(20% - 2rem);
+  top: 0;
+  transform: translate(50%, -50%);
+  right: 50%;
+  position: absolute;
+}
 
+.imgEmptyProfile {
+  width: 100%;
+  border-radius: 50%;
+}
 blockquote::before {
   content: '"';
   font-size: 2rem;
@@ -48,6 +59,11 @@ blockquote::after {
   display: inline;
   font-weight: 400;
 }
+.recommandedBy {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
 @media (max-width: 80rem) {
   .tesimonialBox {
     display: grid;
@@ -59,6 +75,9 @@ blockquote::after {
     justify-items: center;
   }
 }
+.imgBoxEmptyProfile {
+  width: calc(30% - 5vh);
+}
 @media (max-width: 67rem) {
   .tesimonialBox {
     padding: 2rem;
@@ -69,7 +88,10 @@ blockquote::after {
     gap: 10rem;
     justify-items: center;
   }
-
+  .imgBoxEmptyProfile {
+    width: calc(25% - 6vw);
+    transform: translatex(100%, 0);
+  }
   .tesimonial {
     max-width: 80%;
   }

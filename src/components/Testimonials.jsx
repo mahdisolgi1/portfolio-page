@@ -17,7 +17,7 @@ function Testimonials() {
           <div className={styles.tesimonial} key={index.id}>
             <div className={styles.imgBoxEmptyProfile}>
               <img
-                className={styles.imgEmptyProfil}
+                className={styles.imgEmptyProfile}
                 src={index.image}
                 alt="empty-profile"
               />

@@ -76,51 +76,19 @@ body {
   margin-bottom: 3rem;
 }
 
-.img-box-empty-profile {
-  width: calc(20% - 2rem);
-  top: 0;
-  transform: translate(50%, -50%);
-  right: 50%;
-  position: absolute;
-}
-
-.img-empty-profile {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
 .add-margin {
   margin-bottom: 6rem;
-}
-
-.recommandedBy {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
 }
 
 @media (max-width: 80rem) {
   html {
     font-size: 70%;
   }
-
-  .img-box-empty-profile {
-    width: calc(30% - 5vh);
-  }
 }
 
 @media (max-width: 67rem) {
   html {
     font-size: 80%;
-  }
-
-  .img-box-empty-profile {
-    width: calc(25% - 6vw);
-    transform: translatex(100%, 0);
-  }
-
-  .blockquote {
-    font-size: 3rem;
   }
 
   .btn-all {
