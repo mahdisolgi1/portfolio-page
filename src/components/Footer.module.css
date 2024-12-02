@@ -51,16 +51,6 @@
   font-size: 1.8rem;
 }
 
-.linksContainer {
-  justify-self: center;
-  display: flex;
-  margin-right: 15rem;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  text-align: start;
-}
-
 @media (max-width: 77rem) {
   html {
     font-size: 90%;
