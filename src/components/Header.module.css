@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   max-width: 78%;
-
   margin-bottom: 2rem;
 }
 
@@ -112,6 +111,13 @@
   .heroSection {
     margin-top: 11rem;
   }
+
+  .headerDetailsImgBox {
+    width: 60%;
+  }
+  .headerDetails {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 67rem) {
@@ -131,5 +137,9 @@
   }
   .heroSection {
     margin-top: 9rem;
+  }
+
+  .headerDetailsImgBox {
+    width: 70%;
   }
 }
