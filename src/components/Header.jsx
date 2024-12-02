@@ -2,28 +2,9 @@ import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import styles from "./Header.module.css";
 
-const anchors = [
-  {
-    name: "Skills",
-    id: "skills",
-  },
-  {
-    name: "Portfolios",
-    id: "portfolio",
-  },
-  {
-    name: "Testimonoals",
-    id: "testimonoals",
-  },
-];
-
-const button = { buttonTo: "/form", buttonLabel: "Let's Talk" };
-
 function Header() {
   return (
     <header className={styles.header}>
-      <Nav anchors={anchors} button={button} />
-
       <div className={styles.heroSection}>
         <div className={styles.headerDetails}>
           <div className={styles.headerDetailsText}>

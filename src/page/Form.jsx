@@ -1,25 +1,16 @@
 import { useForm, ValidationError } from "@formspree/react";
 import styles from "./Form.module.css";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-const button = {
-  buttonTo: "/",
-  buttonLabel: "Home",
-};
+
 function Form() {
   const [state, handleSubmit] = useForm("mrbgzbdb");
   if (state.succeeded) {
     return (
-      <>
-        <Nav button={button} />
-        <p style={{ textAlign: "center", fontSize: "4rem" }}>email sent ✔✔</p>;
-      </>
+      <p style={{ textAlign: "center", fontSize: "4rem" }}>email sent ✔✔</p>
     );
   }
 
   return (
     <>
-      <Nav button={button} />
       <div className={styles.container}>
         <form className={styles.form_container} onSubmit={handleSubmit}>
           <label className={styles.label} htmlFor="email">
@@ -50,7 +41,6 @@ function Form() {
           </button>
         </form>
       </div>
-      <Footer />
     </>
   );
 }

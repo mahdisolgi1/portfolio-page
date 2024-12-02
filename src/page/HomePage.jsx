@@ -15,8 +15,6 @@ function HomePage() {
         <Portfolio />
         <Testimonials />
       </main>
-
-      <Footer />
     </>
   );
 }
