@@ -1,19 +1,34 @@
-/* eslint-disable react/prop-types */
-import { useState } from "react"; // Import useState for managing state
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Nav.module.css";
 
-function Nav({ anchors, button }) {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // State to manage mobile menu visibility
+const anchors = [
+  {
+    name: "Skills",
+    id: "skills",
+  },
+  {
+    name: "Portfolios",
+    id: "portfolio",
+  },
+  {
+    name: "Testimonoals",
+    id: "testimonoals",
+  },
+];
 
+function Nav() {
+  const location = useLocation();
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen); // Toggle the mobile menu
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
   const scrollToTop = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  const isUsedInForm = (!anchors || anchors.length === 0) && !!button;
+  const isUsedInForm = location.pathname === "/form";
+  const isUsedInHome = location.pathname === "/home";
 
   return (
     <nav className={styles.navbar}>
@@ -26,7 +41,7 @@ function Nav({ anchors, button }) {
           M.S.Dev
         </div>
       )}
-      {/* Logo */}
+
       {!isUsedInForm && (
         <div
           className={`${styles.container} ${
@@ -47,26 +62,22 @@ function Nav({ anchors, button }) {
         }`}
         onClick={toggleMobileMenu}
       >
-        {anchors &&
+        {location.pathname == "/home" &&
           anchors.map((anchor) => (
             <li className={styles.link_items} key={anchor.id}>
               <a href={`#${anchor.id}`}>{anchor.name}</a>
             </li>
           ))}
-        {button && (
-          <li
-            className={
-              !isUsedInForm ? styles.link_items : styles.link_items_form
-            }
+        <li
+          className={!isUsedInForm ? styles.link_items : styles.link_items_form}
+        >
+          <Link
+            className={!isUsedInForm ? styles.talk_btn : styles.talk_btn_form}
+            to={isUsedInHome ? "/form" : "/"}
           >
-            <Link
-              className={!isUsedInForm ? styles.talk_btn : styles.talk_btn_form}
-              to={button.buttonTo}
-            >
-              {button.buttonLabel}
-            </Link>
-          </li>
-        )}
+            {isUsedInHome ? "Let's Talk" : "Home"}
+          </Link>
+        </li>
       </ul>
     </nav>
   );
