@@ -30,17 +30,7 @@
   font-weight: 600;
   margin-bottom: 3rem;
 }
-@media (max-width: 80rem) {
-  .skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    align-content: space-between;
-    justify-content: space-around;
-  }
-}
-@media (max-width: 67rem) {
+@media (max-width: 77rem) {
   .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,8 +39,22 @@
     align-content: space-between;
     justify-content: space-around;
   }
-
   .skill {
     font-size: 2rem;
+  }
+}
+@media (max-width: 67rem) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-around;
+  }
+
+  .skill {
+    font-size: medium;
+    font-size: 1.4rem;
   }
 }
