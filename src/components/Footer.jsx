@@ -12,11 +12,6 @@ function Footer() {
 
       <ul className={`${styles.footer} ${styles.links}`}>
         <li>
-          <a href="https://instagram.com/yourusername" target="_blank">
-            <i className="fab fa-instagram"></i> Instagram
-          </a>
-        </li>
-        <li>
           <a href="https://linkedin.com/in/mahdi-solgi" target="_blank">
             <i className="fab fa-linkedin"></i> LinkedIn
           </a>
