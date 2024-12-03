@@ -5,11 +5,15 @@
   text-align: center;
   display: flex;
   margin-top: 10rem;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .logo {
-  margin-left: 2rem;
+  position: absolute;
+  left: 5rem;
+
   color: #fff;
   font-weight: 700;
   cursor: pointer;
@@ -22,7 +26,8 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+
+  gap: 4rem;
 }
 
 .links li {
@@ -38,7 +43,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 4rem;
+
   font-size: 2rem;
   font-weight: 500;
 }
@@ -53,20 +58,39 @@
 
 @media (max-width: 77rem) {
   html {
+    font-size: 80%;
+  }
+  .logo {
+    margin-left: 0rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+  .links a {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  .links {
+    margin-left: 3rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 67rem) {
+  html {
     font-size: 90%;
   }
   .logo {
     margin-left: 0rem;
     font-weight: 600;
-    font-size: 3rem;
-  }
-  .links a {
-    margin: 0;
+    left: 0.5rem;
     font-size: 2rem;
   }
   .links {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 4rem;
+    gap: 1rem;
+  }
+  .links a {
     margin: 0;
+    font-size: 1rem;
   }
 }
