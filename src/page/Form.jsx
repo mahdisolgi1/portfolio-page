@@ -14,7 +14,7 @@ function Form() {
       <div className={styles.container}>
         <form className={styles.form_container} onSubmit={handleSubmit}>
           <label className={styles.label} htmlFor="email">
-            Your email address
+            Your email address:
           </label>
           <input
             className={styles.input}
@@ -24,7 +24,7 @@ function Form() {
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           <label htmlFor="message" className={styles.label}>
-            Have a word with me
+            Have a word with me:
           </label>
           <textarea className={styles.input} id="message" name="message" />
           <ValidationError

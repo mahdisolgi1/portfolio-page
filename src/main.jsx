@@ -8,6 +8,7 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
+import NotFound from "./page/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/form",
         element: <Form />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
