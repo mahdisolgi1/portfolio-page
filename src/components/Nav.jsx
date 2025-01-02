@@ -21,7 +21,9 @@ function Nav() {
   const location = useLocation();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
+    if (isUsedInHome) {
+      setMobileMenuOpen(!isMobileMenuOpen);
+    }
   };
   const scrollToTop = (e) => {
     e.preventDefault();
