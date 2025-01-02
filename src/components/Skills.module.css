@@ -20,7 +20,7 @@
 .skill {
   background-color: #c0eba6;
   border-radius: 12px;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   padding: 0.8rem;
 }
@@ -54,7 +54,7 @@
   }
 
   .skill {
-    font-size: medium;
+    font-weight: medium;
     font-size: 1.4rem;
   }
 }
