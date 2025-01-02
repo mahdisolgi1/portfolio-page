@@ -91,7 +91,7 @@
 }
 
 .change .bar1 {
-  transform: translate(0, 1.1rem) rotate(-45deg);
+  transform: translate(0, 0.6rem) rotate(-45deg);
 }
 
 .change .bar2 {
@@ -99,15 +99,12 @@
 }
 
 .change .bar3 {
-  transform: translate(0, -1.1rem) rotate(45deg);
+  transform: translate(0, -0.6rem) rotate(45deg);
 }
 
 @media (max-width: 77rem) {
-  html {
-    font-size: 100%;
-  }
-
   .navbar {
+    height: 4rem;
     padding: 1rem;
     z-index: 999;
     display: flex;
@@ -126,6 +123,7 @@
     display: none;
     width: 100%;
     background-color: #f1f1f1;
+    height: 100vh;
     position: fixed;
     top: 4rem;
     left: 0;
@@ -135,9 +133,18 @@
   .container {
     display: inline-block;
   }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #333;
+    margin: 0.3rem 0;
+    transition: 0.4s;
+  }
 
   .links.change {
-    font-size: 5rem;
+    font-size: 3rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -147,13 +154,13 @@
   .link_items button {
     padding: 1rem;
     text-align: center;
-    font-size: 5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
   .logo {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: normal;
     font-weight: 600;
   }
@@ -163,8 +170,11 @@
   }
 
   .talk_btn_form {
-    top: 0.5rem;
-    right: 1.4rem;
-    padding: 0.5rem 1.3rem;
+    top: 0.4rem;
+    right: 0.5rem;
+    padding: 0.4rem 1.3rem;
+  }
+  .link_items_form a {
+    font-size: 2rem;
   }
 }
