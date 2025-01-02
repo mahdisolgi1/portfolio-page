@@ -38,7 +38,7 @@
   font-size: 2rem;
   font-weight: 400;
 }
-@media (max-width: 80rem) {
+@media (max-width: 77rem) {
   .porfolioContainer {
     margin-bottom: 4rem;
     row-gap: 4rem;
@@ -69,6 +69,6 @@
   }
 
   .portfolioText {
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
 }
