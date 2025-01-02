@@ -82,47 +82,47 @@ body {
 
 @media (max-width: 77rem) {
   html {
-    font-size: 80%;
+    font-size: 55%;
   }
   .btn-all {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 
   .talk-btn {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 
   .secondary-heading {
-    font-size: 4rem;
+    font-size: 2.4rem;
   }
 
   .subheading {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 67rem) {
   html {
-    font-size: 90%;
+    font-size: 50%;
   }
 
   .btn-all {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 500;
   }
 
   .talk-btn {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 500;
   }
 
   .secondary-heading {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .subheading {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
