@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .form_container {
@@ -57,4 +57,12 @@
 
 .btn:hover {
   background-color: #009f8a;
+}
+@media (max-width: 77rem) {
+  .container {
+    height: 80vh;
+  }
+  .form_container {
+    max-width: 70rem;
+  }
 }
