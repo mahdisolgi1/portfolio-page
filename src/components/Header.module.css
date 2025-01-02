@@ -88,19 +88,17 @@
   display: inline-block;
 }
 
-@media (max-width: 80rem) {
-  html {
-    font-size: 70%;
-  }
+@media (max-width: 77rem) {
+
   .primaryHeading {
-    font-size: 6rem;
+    font-size: 3rem;
     margin-bottom: 4rem;
   }
   .primaryP {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .skill {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .headerDetails {
     display: flex;
@@ -121,19 +119,17 @@
 }
 
 @media (max-width: 67rem) {
-  html {
-    font-size: 80%;
-  }
+ 
   .primaryHeading {
-    font-size: 5rem;
+    font-size: 2.4rem;
     margin-bottom: 3rem;
   }
   .primaryP {
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
   .skill {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .heroSection {
     margin-top: 9rem;
