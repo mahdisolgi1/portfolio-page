@@ -1,14 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import HomePage from "./page/HomePage.jsx";
-import Root from "./page/Root.jsx";
-import Form from "./page/Form.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import Root from "./pages/Root.jsx";
+import FormPage from "./pages/FormPage.jsx";
 import {
   createBrowserRouter,
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import NotFound from "./page/NotFound.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,11 +26,11 @@ const router = createBrowserRouter([
 
       {
         path: "/form",
-        element: <Form />,
+        element: <FormPage />,
       },
       {
         path: "*",
-        element: <NotFound />,
+        element: <NotFoundPage />,
       },
     ],
   },
